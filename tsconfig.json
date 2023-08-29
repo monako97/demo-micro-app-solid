@@ -1,0 +1,9 @@
+{
+  "extends": "@moneko/solid/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

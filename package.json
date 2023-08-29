@@ -1,0 +1,33 @@
+{
+    "name": "demo-micro-app-solid",
+    "version": "1.0.0",
+    "description": "micro app",
+    "main": "lib/index.js",
+    "scripts": {
+        "start": "mo start micro solid",
+        "build": "mo build micro solid",
+        "lint": "mo eslint src && mo stylelint src",
+        "prepare": "mo githooks pre-commit=\"yarn precommit\" commit-msg=\"npx --no -- commitlint --edit ${1}\"",
+        "precommit": "yarn lint"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "17.7.1",
+        "@commitlint/config-conventional": "17.7.0",
+        "@moneko/cli": "2.0.2",
+        "@moneko/core": "3.0.1",
+        "@moneko/mock": "2.0.0",
+        "@moneko/postcss": "1.0.30",
+        "@moneko/request": "1.0.2",
+        "eslint-config-neko": "2.0.1",
+        "eslint-plugin-solid": "0.13.0",
+        "husky": "8.0.3",
+        "stylelint-config-moneko": "1.0.18"
+    },
+    "dependencies": {
+        "@moneko/solid": "1.1.0",
+        "neko-ui": "^2.3.5",
+        "solid-js": "1.7.11"
+    },
+    "author": "@moneko/cli"
+}
