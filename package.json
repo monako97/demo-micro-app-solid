@@ -7,15 +7,13 @@
         "start": "mo start micro solid",
         "build": "mo build micro solid",
         "lint": "mo eslint src && mo stylelint src",
-        "prepare": "mo githooks pre-commit=\"yarn precommit\" commit-msg=\"npx --no -- commitlint --edit ${1}\"",
+        "prepare": "mo githooks pre-commit=\"yarn precommit\"",
         "precommit": "yarn lint"
     },
     "license": "MIT",
     "devDependencies": {
-        "@commitlint/cli": "17.7.1",
-        "@commitlint/config-conventional": "17.7.0",
-        "@moneko/cli": "2.0.2",
-        "@moneko/core": "3.0.1",
+        "@moneko/cli": "^2.0.2",
+        "@moneko/core": "^3.0.1",
         "@moneko/mock": "2.0.0",
         "@moneko/postcss": "1.0.30",
         "@moneko/request": "1.0.2",
