@@ -37,13 +37,13 @@ function App() {
         <For each={all}>
           {(item) => {
             return (
-              <button
+              <n-button
                 onClick={() => {
                   navigate(item.path);
                 }}
               >
                 {[item.path || '/', item.meta?.title].filter(Boolean)}
-              </button>
+              </n-button>
             );
           }}
         </For>
@@ -53,13 +53,13 @@ function App() {
         <For each={locales}>
           {(item) => {
             return (
-              <button
+              <n-button
                 onClick={() => {
                   setLang(item.language);
                 }}
               >
                 {item.title}
-              </button>
+              </n-button>
             );
           }}
         </For>

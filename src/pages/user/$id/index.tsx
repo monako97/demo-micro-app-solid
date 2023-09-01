@@ -7,12 +7,15 @@ function User() {
   return (
     <div>
       {t['user/:id']}
-      <pre>
-        <code>{JSON.stringify(params, null, 2)}</code>
-      </pre>
+      <n-code lang="js" toolbar={true}>
+        {JSON.stringify(params, null, 2)}
+      </n-code>
       <n-table
         columns={{
-          order: t.order,
+          order: {
+            type: 'order',
+            label: t.order,
+          },
           name: t.username,
           age: t.age,
         }}
