@@ -12,8 +12,8 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "^2.1.2",
-        "@moneko/core": "^3.1.0",
+        "@moneko/cli": "2.2.2",
+        "@moneko/core": "3.1.5",
         "@moneko/mock": "2.0.0",
         "@moneko/postcss": "1.0.30",
         "@moneko/request": "1.0.2",
@@ -24,8 +24,8 @@
     },
     "dependencies": {
         "@moneko/solid": "1.2.1",
-        "neko-ui": "^2.4.4",
-        "solid-js": "1.7.12"
+        "neko-ui": "^2.5.2",
+        "solid-js": "1.8.3"
     },
     "author": "@moneko/cli"
 }
