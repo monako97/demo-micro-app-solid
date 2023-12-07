@@ -1,5 +1,7 @@
 import { t } from '@app/locales';
 import { useParams } from '@moneko/solid';
+import 'neko-ui/es/code';
+import 'neko-ui/es/table';
 
 function User() {
   const params = useParams();

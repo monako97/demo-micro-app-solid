@@ -2,6 +2,7 @@ import { For } from 'solid-js';
 import { locales, setLang, t } from '@app/locales';
 import routes, { RouteConfig } from '@app/routes';
 import { Outlet, useNavigate } from '@moneko/solid';
+import 'neko-ui/es/button';
 import styles from './index.less';
 
 type AllRoute = {
