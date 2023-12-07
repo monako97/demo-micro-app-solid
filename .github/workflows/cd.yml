@@ -38,7 +38,7 @@ jobs:
       - name: 'lint'
         run: yarn lint
       - name: 'Build Github Pages'
-        run: yarn build no-lib no-es config=github
+        run: yarn build config=github
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
