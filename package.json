@@ -12,20 +12,20 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "2.2.2",
-        "@moneko/core": "3.1.5",
+        "@moneko/cli": "2.4.0",
+        "@moneko/core": "3.9.3",
         "@moneko/mock": "2.0.0",
-        "@moneko/postcss": "1.0.30",
+        "@moneko/postcss": "1.2.0",
         "@moneko/request": "1.0.2",
-        "eslint-config-neko": "2.0.2",
+        "eslint-config-neko": "2.2.0",
         "eslint-plugin-solid": "0.13.0",
         "husky": "8.0.3",
-        "stylelint-config-moneko": "1.0.18"
+        "stylelint-config-moneko": "1.2.1"
     },
     "dependencies": {
-        "@moneko/solid": "1.2.1",
-        "neko-ui": "^2.5.2",
-        "solid-js": "1.8.3"
+        "@moneko/solid": "1.4.1",
+        "neko-ui": "^2.6.5",
+        "solid-js": "1.8.7"
     },
     "author": "@moneko/cli"
 }
