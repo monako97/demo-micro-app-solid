@@ -12,10 +12,9 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "2.4.0",
-        "@moneko/core": "3.9.3",
+        "@moneko/cli": "2.6.0",
+        "@moneko/core": "3.9.9",
         "@moneko/mock": "2.0.0",
-        "@moneko/postcss": "1.2.0",
         "@moneko/request": "1.0.2",
         "eslint-config-neko": "2.2.0",
         "eslint-plugin-solid": "0.13.0",
