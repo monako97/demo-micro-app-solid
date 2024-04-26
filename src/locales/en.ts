@@ -17,10 +17,7 @@ const en: LocaleConfig = {
     refetch: 'Refetch',
     outlet: 'Router Page View',
     go: 'to page',
-    lang: 'switch lang',
-    username: 'Username',
-    age: 'Age',
-    order: 'Order',
+    lang: 'switch lang'
   },
 };
 

@@ -1,8 +1,10 @@
-import { type ConfigType, resolveProgram } from '@moneko/core';
+import { type ConfigType, PACKAGENAME, resolveProgram } from '@moneko/core';
 
 const conf: Partial<ConfigType> = {
   devtool: false,
   bar: false,
+  basename: `/${PACKAGENAME}`,
+  publicPath: `/${PACKAGENAME}/`,
   output: resolveProgram('docs'),
   seo: {
     domain: 'monako97.github.io',

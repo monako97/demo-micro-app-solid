@@ -1,8 +1,6 @@
-import { type ConfigType, PACKAGENAME } from '@moneko/core';
+import { type ConfigType } from '@moneko/core';
 
 const conf: Partial<ConfigType> = {
-  basename: `/${PACKAGENAME}`,
-  publicPath: `/${PACKAGENAME}/`,
   importOnDemand: {
     lodash: {
       transform: '${member}',

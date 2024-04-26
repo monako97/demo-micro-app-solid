@@ -2,7 +2,6 @@ import { For } from 'solid-js';
 import { locales, setLang, t } from '@app/locales';
 import routes, { RouteConfig } from '@app/routes';
 import { type RouteProps, useNavigate } from '@moneko/solid';
-import 'neko-ui/es/button';
 import * as styles from './index.less';
 
 // 纯演示用的无关代码: 将路由转换成按钮数据
@@ -36,7 +35,7 @@ function App(p: RouteProps<string>) {
         <For each={all}>
           {(item) => {
             return (
-              <n-button
+              <button
                 onClick={() => {
                   navigate(item.path);
                 }}
@@ -44,7 +43,7 @@ function App(p: RouteProps<string>) {
                 {[item.path || '/', t[item.metadata?.title.toString() || '']]
                   .filter(Boolean)
                   .join(': ')}
-              </n-button>
+              </button>
             );
           }}
         </For>
@@ -54,13 +53,13 @@ function App(p: RouteProps<string>) {
         <For each={locales}>
           {(item) => {
             return (
-              <n-button
+              <button
                 onClick={() => {
                   setLang(item.language);
                 }}
               >
                 {item.title}
-              </n-button>
+              </button>
             );
           }}
         </For>

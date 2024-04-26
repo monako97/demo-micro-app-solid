@@ -4,16 +4,20 @@ import type { RouteConfig } from '@app/routes';
 const router: RouteConfig[] = [
   {
     path: '/',
+
     component: lazy(() => import(/* webpackChunkName: "layout" */ '@/layout')),
     children: [
       {
-        path: 'user',
+        path: '/',
+        component: lazy(() => import('@/pages')),
+      },
+      // 配置自定义路由
+      {
+        path: 'about',
         children: [
           {
-            metadata: {
-              title: 'user',
-            },
             path: '/',
+            component: lazy(() => import('@/pages/home')),
           },
         ],
       },
