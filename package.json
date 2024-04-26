@@ -7,24 +7,22 @@
         "start": "mo start micro solid",
         "build": "mo build micro solid",
         "lint": "mo eslint src && mo stylelint src",
-        "prepare": "mo githooks pre-commit=\"yarn precommit\"",
-        "precommit": "yarn lint"
+        "prepare": "mo githooks pre-commit=\"npm run precommit\"",
+        "precommit": "npm run lint"
     },
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "2.6.0",
-        "@moneko/core": "3.9.9",
-        "@moneko/mock": "2.0.0",
+        "@moneko/cli": "2.9.4",
+        "@moneko/core": "3.13.1",
         "@moneko/request": "1.0.2",
-        "eslint-config-neko": "2.2.0",
-        "eslint-plugin-solid": "0.13.0",
-        "husky": "8.0.3",
-        "stylelint-config-moneko": "1.2.1"
+        "eslint-config-neko": "2.7.1",
+        "eslint-plugin-solid": "0.13.2",
+        "husky": "9.0.11",
+        "stylelint-config-moneko": "2.3.2"
     },
     "dependencies": {
-        "@moneko/solid": "1.4.1",
-        "neko-ui": "^2.6.5",
-        "solid-js": "1.8.7"
+        "@moneko/solid": "1.7.7",
+        "neko-ui": "^2.7.3"
     },
     "author": "@moneko/cli"
 }

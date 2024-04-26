@@ -1,14 +1,14 @@
-import { type ConfigType, resolveProgramPath } from '@moneko/core';
+import { type ConfigType, resolveProgram } from '@moneko/core';
 
 const conf: Partial<ConfigType> = {
   devtool: false,
   bar: false,
   output: {
-    path: resolveProgramPath('docs'),
+    path: resolveProgram('docs'),
   },
   seo: {
     domain: 'monako97.github.io',
-    nojekyll: true,
+    jekyll: false,
   },
   fixBrowserRouter: {
     pathSegmentsToKeep: 1,

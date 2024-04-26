@@ -1,21 +1,20 @@
 import { For } from 'solid-js';
 import { locales, setLang, t } from '@app/locales';
 import routes, { RouteConfig } from '@app/routes';
-import { Outlet, useNavigate } from '@moneko/solid';
+import { type RouteProps, useNavigate } from '@moneko/solid';
 import 'neko-ui/es/button';
-import styles from './index.less';
-
-type AllRoute = {
-  path: string;
-  meta?: RouteConfig['meta'];
-};
+import * as styles from './index.less';
 
 // 纯演示用的无关代码: 将路由转换成按钮数据
-function transformRoutes(inputRoutes: RouteConfig[], parentPath?: string, result: AllRoute[] = []) {
+function transformRoutes(
+  inputRoutes: RouteConfig[],
+  parentPath?: string,
+  result: RouteConfig[] = [],
+) {
   for (const route of inputRoutes) {
-    const { path, meta, children } = route;
+    const { path, metadata, children } = route;
     const fullPath = [parentPath, path].join('/').split('/').filter(Boolean).join('/');
-    const transformedRoute: AllRoute = { path: fullPath, meta };
+    const transformedRoute: RouteConfig = { path: fullPath, metadata };
 
     if (children) {
       transformRoutes(children, fullPath, result);
@@ -23,11 +22,10 @@ function transformRoutes(inputRoutes: RouteConfig[], parentPath?: string, result
       result.push(transformedRoute);
     }
   }
-
   return result;
 }
 
-function App() {
+function App(p: RouteProps<string>) {
   const all = transformRoutes(routes);
   const navigate = useNavigate();
 
@@ -43,7 +41,9 @@ function App() {
                   navigate(item.path);
                 }}
               >
-                {[item.path || '/', item.meta?.title].filter(Boolean)}
+                {[item.path || '/', t[item.metadata?.title.toString() || '']]
+                  .filter(Boolean)
+                  .join(': ')}
               </n-button>
             );
           }}
@@ -66,8 +66,7 @@ function App() {
         </For>
       </p>
       <main class={styles.main}>
-        {t.outlet}:
-        <Outlet />
+        {t.outlet}:{p.children}
       </main>
     </div>
   );
