@@ -7,7 +7,8 @@
         "start": "mo start micro solid",
         "build": "mo build micro solid",
         "stylelint": "mo stylelint src",
-        "eslint": "mo eslint src"
+        "eslint": "mo eslint src",
+        "lint": "npm run eslint && npm run stylelint"
     },
     "license": "MIT",
     "devDependencies": {
