@@ -13,7 +13,7 @@
     "license": "MIT",
     "devDependencies": {
         "@moneko/cli": "2.13.7",
-        "@moneko/core": "3.17.31",
+        "@moneko/core": "3.17.33",
         "@moneko/request": "1.0.2",
         "eslint-config-neko": "2.7.6",
         "eslint-plugin-solid": "0.14.0",
