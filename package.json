@@ -12,16 +12,16 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "2.13.7",
-        "@moneko/core": "3.17.33",
+        "@moneko/cli": "2.14.11",
+        "@moneko/core": "3.21.3",
         "@moneko/request": "1.0.2",
-        "eslint-config-neko": "2.7.6",
-        "eslint-plugin-solid": "0.14.0",
-        "stylelint-config-moneko": "2.4.0"
+        "eslint-config-neko": "2.8.4",
+        "eslint-plugin-solid": "0.14.1",
+        "stylelint-config-moneko": "2.4.1"
     },
     "dependencies": {
-        "@moneko/solid": "1.8.0",
-        "solid-js": "1.8.17"
+        "@moneko/solid": "1.9.5",
+        "solid-js": "1.8.18"
     },
     "author": "moneko97"
 }
