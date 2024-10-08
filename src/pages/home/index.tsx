@@ -1,5 +1,6 @@
 import { createResource } from 'solid-js';
 import { t } from '@app/locales';
+
 import { fetchHitokoto } from '@/services/hitokoto';
 
 function Home() {
