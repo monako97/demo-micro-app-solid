@@ -12,8 +12,8 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "2.15.6",
-        "@moneko/core": "3.23.5",
+        "@moneko/cli": "2.15.7",
+        "@moneko/core": "3.23.8",
         "@moneko/request": "1.0.2",
         "eslint-config-neko": "3.0.0",
         "eslint-plugin-solid": "0.14.3",
@@ -21,7 +21,7 @@
     },
     "dependencies": {
         "@moneko/solid": "1.10.5",
-        "solid-js": "1.9.2"
+        "solid-js": "1.9.3"
     },
     "author": "moneko97"
 }
